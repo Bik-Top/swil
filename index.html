@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Webpack App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header class="header">
+  <div class="header__wrapper container">
+    <a class="logo__link" href="#logo">
+      <img src="./src/images/icons/logo.svg" alt="logo">
+    </a>
+    <div class="user">
+      <div class="user__name">Arthur Wood</div>
+      <div class="avatar__with-arrow">
+        <div class="img-wrapper">
+          <img width="24" src="./src/images/avatar.png" height="24" alt="Arthur Wood">
+        </div>
+        <span>
+          <img src="./src/images/icons/icon_arrow.svg" alt="arrow">
+        </span>
+      </div>
+    </div>
+    <div class="statuses">
+      <a href="#bell">
+        <img src="./src/images/icons/icon_bell.svg" alt="bell">
+      </a>
+      <a href="#icon_gift">
+        <img src="./src/images/icons/icon_gift.svg" alt="icon_gift">
+      </a>
+      <a href="#icon_M">
+        <img src="./src/images/icons/icon_M.svg" alt="icon_M">
+      </a>
+    </div>
+    <ul class="nav-menu">
+      <li>
+        <a class="active" href="#feed">FEED</a>
+      </li>
+      <li>
+        <a href="#explore">EXPLORE</a>
+      </li>
+      <li>
+        <a href="#discussions">DISCUSSIONS</a>
+      </li>
+    </ul>
+    <div class="rounded-add">
+      <img src="./src/images/icons/icon_plus.svg" alt="plus">
+    </div>
+  </div>
+</header>
+<main class="main container">
+  <div class="main__aside">
+
+    <div class="user-desc">
+      <div class="user-desc__photo">
+        <img src="./src/images/avatar2.png" alt="avatar">
+      </div>
+      <div class="user-desc__info">
+        <div class="user-desc__nick">Benjamin Clementine</div>
+        <div class="user-desc__mail">@benclementine</div>
+        <a href="#edit-link" class="user-desc__edit-link">
+          <img src="./src/images/icons/icon_edit.svg" alt="edit">
+          <span>Edit Profile</span>
+        </a>
+      </div>
+
+      <div class="user-desc__button">
+        <img src="./src/images/icons/icon_3dots.svg" alt="button  menu for report user or block">
+        <ul class="user-desc__dropdown">
+          <li>
+            <a href="#report_user">
+              <span><img src="./src/images/icons/icon_report.svg" alt="Report User"></span>
+              Report User
+            </a>
+          </li>
+          <li>
+            <a href="#block_user">
+              <span><img src="./src/images/icons/icon_block.svg" alt="Block User"></span>
+              Block User
+            </a>
+          </li>
+          <li>
+            <a href="#block_user2">
+              <span><img src="./src/images/icons/icon_block2.svg" alt="Hide"></span>
+              Hide
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="user-desc__stats">
+        <span>
+         <b>45</b>
+          synths
+        </span>
+        <span>
+        <b>110</b>
+        followers
+      </span>
+        <span>
+        <b>322</b>
+        following
+      </span>
+      </div>
+
+      <p class="user-desc__description">
+        Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30 percent each,
+        according to CoinMarketCap. Here is the latest Ripple price news and live updates on XRP, bitcoin and Ethereum.
+      </p>
+    </div>
+
+  </div>
+  <div class="context">
+    <nav class="context__menu">
+      <span>Public</span>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <span>Private</span>
+    </nav>
+    <div class="card__wraper">
+
+      <div class="card">
+        <div class="card__header">
+          <a href="#shared"></a>
+          <div></div>
+        </div>
+        <p class="card__content">New air routes that promise cheap flights in</p>
+        <div class="card__footer">
+          <div class="circle"></div>
+          <div class="card__name">Gregory Watkins</div>
+          <a href="#share">Share</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__header">
+          <a href="#shared"></a>
+          <div></div>
+        </div>
+        <p class="card__content">New air routes that promise cheap flights in</p>
+        <div class="card__footer">
+          <div class="circle"></div>
+          <div class="card__name">Gregory Watkins</div>
+          <a href="#share">Share</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__header">
+          <a href="#shared">Shared to</a>
+          <div contenteditable="true" class="card__link-contenteditable">#discussionaboutanimgttdds…</div>
+          <!-- text-overflow: ellipsis; ???-->
+        </div>
+        <p class="card__content">New air routes that promise cheap flights in</p>
+        <div class="card__footer">
+          <div class="circle"></div>
+          <div class="card__name">Gregory Watkins</div>
+          <div class="card__stat">
+            <span>
+              <img src="./src/images/icons/icon_play.svg" alt="play">
+              88
+            </span>
+            <span>
+              <img src="./src/images/icons/icon_like.svg" alt="like">
+              24
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__header">
+          <a href="#shared">
+            <img src="./src/images/icons/icon_link.svg" alt="Shared">
+            Shared via weblink
+          </a>
+        </div>
+        <p class="card__content">New air routes that promise cheap flights in</p>
+        <div class="card__footer">
+          <div class="circle"></div>
+          <div class="card__name">Gregory Watkins</div>
+          <div class="card__stat">
+            <span>
+              <img src="./src/images/icons/icon_play.svg" alt="play">
+              88
+            </span>
+            <span>
+              <img src="./src/images/icons/icon_like.svg" alt="like">
+              24
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
